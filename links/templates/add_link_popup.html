@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% load bootstrap3 %}
+
+{% block navbar %}{% endblock %}
+
+{% block bootstrap3_extra_head %}{% endblock %}
+
+{% block content %}
+    <h1>Save the link</h1>
+    <div class="well">
+        <form class="form form-horizontal" method="post">
+            {% csrf_token %}
+            {% bootstrap_form form layout="horizontal" %}
+            {% buttons %}
+                <div class="col-md-offset-3 col-md-8">
+                    <button type="submit" class="btn btn-primary">
+                        {% bootstrap_icon "ok" %} Submit
+                    </button>
+                </div>
+            {% endbuttons %}
+        </form>
+    </div>
+{% endblock %}

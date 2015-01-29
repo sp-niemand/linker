@@ -9,7 +9,7 @@ class LinkTag(models.Model):
 
 class Link(models.Model):
     author = models.ForeignKey(User)
-    link = models.CharField(max_length=LINK_MAX_LENGTH)
+    link = models.URLField(max_length=LINK_MAX_LENGTH)
     description = models.TextField()
     created_when = models.DateTimeField(auto_now_add=True)
     tags = models.ManyToManyField(LinkTag)
