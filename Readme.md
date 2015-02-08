@@ -1,27 +1,9 @@
-# Пожелания
+# Linker
 
-* Скелет приложения __DONE__
-* Быстро сохранить линк, добавить теги (здесь нужен букмарклет)
-    - букмарклет просто откроет маленькое окошко-попап с сайта, в котором можно будет отредактировать линк, теги и описание
-* Просмотреть список своих линков
-* Просмотреть список линков по тегу/тегам
-* Просмотреть список линков человека
+An exercise in Python/Django, inspired by http://getpocket.com/.
 
-# Модели
+There is a need for a rather simple link-sharing app connected to my current workplace's auth system.
 
-**Link**
+Adding links will be done through a bookmarklet for starters. Chrome extension will follow.
 
-* author
-* link
-* description
-* created_when
-
-**User**
-
-* login (из LDAP)
-* last_name   
-* first_name
-
-**LinkTag**
-
-* name
+Work has only just been started.
